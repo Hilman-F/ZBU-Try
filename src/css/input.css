@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&display=swap');
+@import "tailwindcss";
+@tailwind utilities;
+
+@theme {
+  --font-Jersey: "Jersey 25", "sans-serif";
+}
+
+@layer utilities {
+  .tab-underline::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    height: 2px;
+    width: 0%;
+    background-color: #2563eb; /* Tailwind blue-600 */
+    transition: width 0.3s ease, left 0.3s ease;
+  }
+
+  .tab-underline-active::after {
+    left: 0%;
+    width: 100%;
+  }
+}

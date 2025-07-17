@@ -1,75 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Umroh Landing Page</title>
+    <title>Tailwind Background Image</title>
+    <!-- CDN Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- Swiper.js CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <style>
-      .swiper {
-        width: 100%;
-        height: 700px;
-      }
-      .swiper-slide img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    </style>
   </head>
-  <body class="bg-white text-gray-800">
-    <!-- Header -->
-    <header class="bg-blue-900 text-white p-6 shadow">
-      <div class="container mx-auto text-center">
-        <h1 class="text-3xl font-bold">Umroh Spesial 2025</h1>
-        <p class="text-lg mt-2">Bersama Pembimbing Berpengalaman</p>
-      </div>
-    </header>
-
-    <!-- Swiper Slider -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="assets/1.jpg" alt="Mecca" />
-        </div>
-        <div class="swiper-slide">
-          <img src="assets/4.jpg" alt="Madinah" />
-        </div>
-        <div class="swiper-slide">
-          <img src="assets/5.jpg" alt="Kaaba" />
-        </div>
-      </div>
-    </div>
-
-    <!-- Content -->
-    <section class="py-12 px-6 max-w-4xl mx-auto text-center">
-      <h2 class="text-2xl font-semibold mb-4">Fasilitas Unggulan</h2>
-      <ul class="text-left inline-block text-lg space-y-2">
-        <li>✅ Tiket PP dari Surabaya</li>
-        <li>✅ Hotel dekat Masjidil Haram & Nabawi</li>
-        <li>✅ Makan 3x sehari menu Indonesia</li>
-        <li>✅ Transportasi Bus AC Eksekutif</li>
-        <li>✅ Manasik Umroh & Pembimbing Berpengalaman</li>
-        <li>✅ Air Zamzam & Souvenir Eksklusif</li>
-      </ul>
+  <body class="h-screen bg-[url('../assets/txtr.avif')] bg-cover bg-center">
+    <!-- Section dengan background image -->
+    <section class=" bg-[url('./assets/txtr.avif')] bg-cover bg-center flex items-center justify-center">
+      
+        <h1 class="text-3xl font-bold text-[#447EBE] mb-4">Selamat Datang</h1>
+        <p class="text-gray-700">Ini adalah proyek Tailwind dengan background image.</p>
+      
     </section>
-
-    <!-- SWIPER JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-      const swiper = new Swiper(".mySwiper", {
-        loop: true,
-        autoplay: {
-          delay: 3000, // 30 detik
-          disableOnInteraction: false,
-        },
-        speed: 10000, // slide speed
-        slidesPerView: 1,
-        spaceBetween: 0,
-      });
-    </script>
   </body>
 </html>

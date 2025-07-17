@@ -1,28 +1,4 @@
 AOS.init();
-
-document.addEventListener("DOMContentLoaded", function () {
-  const paketLink = document.getElementById("paketToggle");
-  const arrowIcon = document.getElementById("arrowIcon");
-  const dropdown = document.getElementById("dropdownMenu");
-
-  let isOpen = false;
-
-  paketLink.addEventListener("click", function (e) {
-    e.preventDefault();
-    isOpen = !isOpen;
-    dropdown.classList.toggle("hidden", !isOpen);
-    arrowIcon.classList.toggle("rotate-180", isOpen);
-  });
-
-  document.addEventListener("click", function (e) {
-    if (!paketLink.contains(e.target) && !dropdown.contains(e.target)) {
-      isOpen = false;
-      dropdown.classList.add("hidden");
-      arrowIcon.classList.remove("rotate-180");
-    }
-  });
-});
-
 //////////////////// Slider ////////////////////
 const swiper = new Swiper(".mySwiper", {
   loop: true,
@@ -36,6 +12,24 @@ const swiper = new Swiper(".mySwiper", {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const menuBtn = document.getElementById("menu-btn");
+  const menu = document.getElementById("menu");
+  const dropdownBtn = document.getElementById("dropdown-btn");
+  const dropdownMenu = document.getElementById("dropdown-menu");
+  const dropdownIcon = document.getElementById("dropdown-icon");
+
+  menuBtn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+
+  dropdownBtn.addEventListener("click", () => {
+    dropdownMenu.classList.toggle("hidden");
+    dropdownIcon.classList.toggle("rotate-180");
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function () {
   const tabButtons = document.querySelectorAll(".tab-btn");
   const promoContainer = document.getElementById("promoContainer");
   const noPromoMessage = document.getElementById("noPromoMessage");
@@ -43,11 +37,11 @@ document.addEventListener("DOMContentLoaded", function () {
   const promoTitle = document.getElementById("promoTitle");
 
   const promoData = {
-    "best-seller": ["../assets/paket/full-01.png", "../assets/paket/full-01.png", "../assets/paket/full-01.png", "../assets/paket/full-01.png", "../assets/paket/full-01.png"],
-    silver: ["../assets/paket/full-01.png"],
+    "best-seller": ["../assets/paket/fix2-nb-01.png"],
+    silver: ["../assets/paket/fix2-nb-01.png"],
     gold: [],
-    platinum: ["../assets/paket/full-01.png", "../assets/paket/full-01.png"],
-    all: ["../assets/paket/full-01.png", "../assets/paket/full-01.png", "../assets/paket/full-01.png"],
+    platinum: ["../assets/paket/fix2-nb-01.png"],
+    all: ["../assets/paket/fix2-nb-01.png"],
   };
 
   function getCategoryFromPath() {
@@ -72,26 +66,57 @@ document.addEventListener("DOMContentLoaded", function () {
       promos = promoData[category] || [];
     }
 
-    // Update Judul Promo jika elemen ada
     if (promoTitle) {
       promoTitle.textContent = `Promo Paket ${category.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())}`;
     }
 
     if (promos.length === 0) {
-      noPromoMessage.classList.remove("hidden");
+      noPromoMessage?.classList.remove("hidden");
     } else {
-      noPromoMessage.classList.add("hidden");
+      noPromoMessage?.classList.add("hidden");
+
       promos.forEach((src, index) => {
+        // Bungkus dengan div relative
+        const wrapper = document.createElement("div");
+        wrapper.className = "relative w-full mt-3";
+
+        // Gambar
         const img = document.createElement("img");
         img.src = src;
         img.alt = "Promo Paket";
-        img.className = "rounded w-full  mt-5 object-cover ";
+        img.className = "rounded  h-auto z-0";
 
-        // Tambahkan animasi AOS
         img.setAttribute("data-aos", "zoom-out");
-        img.setAttribute("data-aos-delay", `${index * 500}`);
+        img.setAttribute("data-aos-delay", `${index * 300}`);
+        // promoContainer.appendChild(wrapper);
+        // wrapper.appendChild(img);
 
-        promoContainer.appendChild(img);
+        // Tombol Daftar Sekarang
+        const daftarBtn = document.createElement("a");
+        daftarBtn.href = "#daftar";
+        daftarBtn.textContent = "Daftar!";
+        daftarBtn.className = "absolute top-[86%] left-[35%] -translate-x-1/2 -translate-y-1/2 " + "bg-white text-[#447EBE] text-[0.25rem] font-bold px-1 py-0.5 rounded-full shadow-lg " + "hover:bg-blue-100 transition z-10";
+
+        // Tombol Hubungi Kami
+        const hubungiBtn = document.createElement("a");
+        hubungiBtn.href = "https://wa.me/6281234567890";
+        hubungiBtn.textContent = "Hubungi Kami";
+        hubungiBtn.className = "absolute top-[86%] left-[45%] -translate-x-1/2 -translate-y-1/2 " + "bg-[#447EBE] text-white text-[0.25rem] font-bold px-1 py-0.5 rounded-full shadow-lg " + "hover:bg-blue-100 transition z-10";
+
+        // Icon Whatsapp
+        const whatsappIcon = document.createElement("img");
+        whatsappIcon.src = "../assets/Icon/WhatsApp-w.png";
+        whatsappIcon.alt = "Icon Whatsapp";
+        whatsappIcon.className = "w-1.5 h-1.5 inline-block mr-0.5";
+        hubungiBtn.prepend(whatsappIcon);
+
+        // wrapper.appendChild(hubungiBtn);
+
+        promoContainer.appendChild(wrapper);
+        wrapper.appendChild(img);
+        wrapper.appendChild(daftarBtn);
+        wrapper.appendChild(hubungiBtn);
+        // baru masukkan wrapper ke halaman
       });
     }
   }
@@ -106,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Inisialisasi awal: pilih "Semua"
+  // Inisialisasi
   const defaultCategory = getCategoryFromPath();
   const defaultTab = document.querySelector(`[data-category="${defaultCategory}"]`);
   if (defaultTab) {
@@ -115,7 +140,6 @@ document.addEventListener("DOMContentLoaded", function () {
     updateLihatSemuaLink(defaultCategory);
   }
 
-  // Event listener tombol tab
   tabButtons.forEach((btn) => {
     btn.classList.add("tab-underline");
     btn.addEventListener("click", () => {

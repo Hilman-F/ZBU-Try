@@ -1,18 +1,20 @@
 AOS.init();
 //////////////////// Slider ////////////////////
-const swiper = new Swiper(".mySwiper", {
-  loop: true,
-  autoplay: {
-    delay: 3000, // 30 detik
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  speed: 2000, // slide speed
-  slidesPerView: 1,
-  spaceBetween: 0,
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 3000, // 3 detik
+      disableOnInteraction: false,
+    },
+    speed: 2000, // kecepatan slide
+    slidesPerView: 1,
+    spaceBetween: 0,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -32,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
 document.addEventListener("DOMContentLoaded", function () {
   const tabButtons = document.querySelectorAll(".tab-btn");
   const promoContainer = document.getElementById("promoContainer");
@@ -40,11 +41,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const promoTitle = document.getElementById("promoTitle");
 
   const promoData = {
-    "best-seller": ["../assets/paket/fix2-nb-01.png"],
-    silver: ["../assets/paket/fix2-nb-01.png"],
-    gold: [],
-    platinum: ["../assets/paket/fix2-nb-01.png"],
-    all: ["../assets/paket/fix2-nb-01.png"],
+    "best": ["../../assets/paket/fix2-nb-01.png"],
+    hemat: ["../../assets/paket/fix2-nb-01.png"],
+    promo: [],
+    berkah: ["../../assets/paket/fix2-nb-01.png"],
+    vip: ["../../assets/paket/fix2-nb-01.png"],
+    vvip: ["../../assets/paket/fix2-nb-01.png"],
+    all: ["../../assets/paket/fix2-nb-01.png"],
   };
 
   function getCategoryFromPath() {
@@ -130,7 +133,6 @@ document.addEventListener("DOMContentLoaded", function () {
   if (defaultTab) {
     setActiveTab(defaultTab);
     renderPromos(defaultCategory);
-    updateLihatSemuaLink(defaultCategory);
   }
 
   tabButtons.forEach((btn) => {
@@ -139,7 +141,6 @@ document.addEventListener("DOMContentLoaded", function () {
       const category = btn.getAttribute("data-category");
       setActiveTab(btn);
       renderPromos(category);
-      updateLihatSemuaLink(category);
     });
   });
 });

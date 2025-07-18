@@ -6,6 +6,10 @@ const swiper = new Swiper(".mySwiper", {
     delay: 3000, // 30 detik
     disableOnInteraction: false,
   },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   speed: 2000, // slide speed
   slidesPerView: 1,
   spaceBetween: 0,

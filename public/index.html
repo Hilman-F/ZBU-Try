@@ -50,9 +50,9 @@
       </nav>
     </header>
 
-    <main>
+    <main class="overflow-x-hidden w-screen">
       <!-- Hero -->
-      <!-- <section class="overflow-x-hidden" >
+      <section class="overflow-x-hidden w-screen" >
         <div class="mySwiper w-full max-w-full h-[13rem] ">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -69,15 +69,10 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
 
-      <section class="overflow-x-hidden" >
-        <div class="w-full h-[13rem]">
-          <img src="../assets/1.jpg" alt="1" class="w-full h-full object-cover object-center">
-          </div>
-          </section>
       <!-- Mengapa? -->
-      <section class="bg-[url('../assets/txtr3-50.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply text-white py-3">
+      <section class="bg-[url('../assets/txtr3-50.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply text-white py-3 overflow-x-hidden w-screen">
         <div class="container mx-auto">
           <h1 class="text-xl font-Jersey tracking-wide mb-4 text-center">Mengapa Harus ZBU</h1>
           <div class="grid grid-cols-1 gap-4 items-center">
@@ -163,9 +158,9 @@
       </section>
 
       <!-- Paket ZBU -->
-      <!-- <section class="py-3 bg-[url('../assets/txtr3-50.jpg')] bg-cover bg-center">
+      <section class="py-3 bg-[url('../assets/txtr3-50.jpg')] bg-cover bg-center overflow-x-hidden w-screen">
           <h2 class="text-xl font-Jersey mb-3 text-center text-[#447EBE]">Paket Umroh & Haji ZBU</h2>
-          
+          <!-- filter -->
           <div class="w-11/12 mx-auto overflow-x-auto whitespace-nowrap flex justify-start gap-2 text-xs font-medium md:justify-center sm:gap-3 sm:text-sm" id="categoryTabs">
             <button class="tab-btn active-category cursor-pointer px-3 py-1 rounded-full border border-[#447EBE] text-[#447EBE] hover:bg-[#447EBE] hover:text-white transition-colors duration-310" data-category="all">Semua</button>
             <button class="tab-btn cursor-pointer px-3 py-1 rounded-full border border-[#447EBE] text-[#447EBE] hover:bg-[#447EBE] hover:text-white transition-colors duration-300" data-category="best-seller">Best Seller</button>
@@ -177,14 +172,20 @@
           </div>
           
           <div id="promoContainer" class="w-11/12 grid grid-cols-1 mx-auto">
-            
+            <!-- Promo items akan dimasukkan di sini via JS -->
           </div>
   
+          <!-- Pesan jika tidak ada promo -->
           <p id="noPromoMessage" class="text-center text-gray-500 hidden mt-6">Promo paket belum tersedia.</p>
-      </section> -->
+  
+          <!-- Tombol lihat semua -->
+          <!-- <div class="flex justify-center mt-4">
+            <a id="lihatSemuaBtn" href="#" class="bg-[#447EBE] text-white px-2 py-1 rounded-md text-xs mx-7">Lihat Semua</a>
+          </div> -->
+      </section>
 
       <!-- Galeri -->
-      <!-- <section class="bg-[url('../assets/txtr3-50.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply py-3 ">
+      <section class="bg-[url('../assets/txtr3-50.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply py-3 overflow-x-hidden w-screen">
           <h2 class="text-xl text-white font-Jersey mb-3 text-center">Galeri Kegiatan ZBU</h2>
           <div class="grid grid-cols-2 grid-rows-5 gap-2 px-5">
             <div class="rounded-xl row-span-3 bg-white" data-aos="zoom-in" data-aos-duration="800">
@@ -204,10 +205,10 @@
           <div class="flex justify-center mt-4">
             <a href="./pages/galeri.html" class="text-white font-bold px-2 py-1 rounded-md text-xs border border-white hover:border hover:border-[#366BA1] hover:bg-[#366ba1] hover:text-white">Lihat Semua</a>
           </div>
-      </section> -->
+      </section>
 
       <!-- Testimoni -->
-      <!-- <section class="py-3 bg-[url('../assets/txtr3-50.jpg')] bg-cover bg-center">
+      <section class="py-3 bg-[url('../assets/txtr3-50.jpg')] bg-cover bg-center overflow-x-hidden w-screen">
           <h2 class=" text-xl font-Jersey mb-4 text-center text-[#447EBE]">Testimoni Jamaah</h2>
       
           <div class="w-11/12 mx-auto flex gap-4 overflow-x-auto md:grid md:grid-cols-2 md:w-full md:overflow-visible">
@@ -272,12 +273,12 @@
               </p>
             </div>
           </div>
-      </section> -->
+      </section>
       
       <!-- Footer -->
-      <!-- <footer class="bg-[url('../assets/txtr3-50.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply text-white py-3">
+      <footer class="bg-[url('../assets/txtr3-50.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply text-white py-3 overflow-x-hidden w-screen">
         <div class="container px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          
+          <!-- Lokasi dan Maps -->
           <div class="items-center">
             <h2 class="font-bold text-md mb-1">Lokasi Kantor</h2>
             <p class="text-xs">
@@ -298,6 +299,7 @@
             ></iframe>
           </div>
   
+          <!-- Info Perusahaan -->
           <div class="hidden">
             <h2 class="font-bold text-lg mb-2">PT. Zamzam Berkah Utama</h2>
             <p class="mb-2">Agen travel ibadah Haji dan Umrah dengan pengalaman lebih dari 10 tahun melayani jamaah dengan amanah dan berkualitas.</p>
@@ -308,6 +310,7 @@
             </ul>
           </div>
   
+          <!-- Kontak & Sosial Media -->
           <div class="">
             <h2 class="font-bold text-md mb-1">Kontak Kami</h2>
             <p class="text-xs">
@@ -325,7 +328,7 @@
           </div>
         </div>
         <p class="text-gray-300 text-xs text-center mt-4 font-bold">© 2025 PT. Zamzam Berkah Utama Tour & Travel</p>
-      </footer> -->
+      </footer>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

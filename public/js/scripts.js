@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const tabButtons = document.querySelectorAll(".tab-btn");
   const promoContainer = document.getElementById("promoContainer");
   const noPromoMessage = document.getElementById("noPromoMessage");
-  const lihatSemuaBtn = document.getElementById("lihatSemuaBtn");
   const promoTitle = document.getElementById("promoTitle");
 
   const promoData = {
@@ -51,9 +50,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function setActiveTab(activeBtn) {
     tabButtons.forEach((btn) => {
-      btn.classList.remove("text-[#447EBE]", "font-bold", "tab-underline-active");
+      btn.classList.remove("text-white", "bg-[#447EBE]", "font-bold");
     });
-    activeBtn.classList.add("text-[#447EBE]", "font-bold", "tab-underline-active");
+    activeBtn.classList.add("text-white", "bg-[#447EBE]", "font-bold");
   }
 
   function renderPromos(category) {
@@ -118,16 +117,6 @@ document.addEventListener("DOMContentLoaded", function () {
         wrapper.appendChild(hubungiBtn);
         // baru masukkan wrapper ke halaman
       });
-    }
-  }
-
-  function updateLihatSemuaLink(category) {
-    if (lihatSemuaBtn) {
-      if (category === "all") {
-        lihatSemuaBtn.href = "/public/pages/paket.html";
-      } else {
-        lihatSemuaBtn.href = `/public/pages/paket.html?category=${category}`;
-      }
     }
   }
 

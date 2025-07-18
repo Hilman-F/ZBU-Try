@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zamzam Berkah Utama</title>
+    <script src="https://cdn.tailwindcss.com"></script>              
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="overflow-x-hidden">
+    <header class="bg-[#447EBE]">
+      <!-- Navbar -->
+      <nav class="shadow-md p-4 text-white font-Jersey tracking-wider">
+        <div class="flex items-center justify-between">
+          <!-- Logo -->
+          <a href="../index.html"><img src="../../assets/logo.png" alt="Logo" class="w-40" /></a>
+
+          <!-- Hamburger -->
+          <button id="menu-btn" aria-label="Menu" class="cursor-pointer block md:hidden focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+        
+        <!-- Menu List -->
+        <div id="menu" class="mt-4 space-y-2 md:hidden hidden">
+          <a href="#" class="block px-2 py-2 hover:bg-[#366ba1] rounded">Paket ZBU</a>
+          <a href="#" class="block px-2 py-2 hover:bg-[#366ba1] rounded">Galeri</a>
+          <a href="#" class="block px-2 py-2 hover:bg-[#366ba1] rounded">Tentang Kami</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="bg-[url('../../assets/txtr3-50.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply py-3 ">
+        <h2 class="text-xl text-white font-Jersey mb-3 text-center">Galeri Kegiatan ZBU</h2>
+        <div class="grid grid-cols-2 grid-rows-5 gap-2 px-5">
+          <div class="rounded-xl row-span-3 bg-white" data-aos="zoom-in" data-aos-duration="800">
+            <img src="../../assets/6.jpg" alt="Gambar 1" class="border border-white w-full h-full rounded-xl object-cover" />
+          </div>
+          <div class="rounded-xl row-span-2  bg-white" data-aos="zoom-in" data-aos-duration="800">
+            <img src="../../assets/10.jpg" alt="Gambar 2" class="border border-white w-full h-full rounded-xl object-cover" />
+          </div>
+          <div class="rounded-xl row-span-3  bg-white" data-aos="zoom-in" data-aos-duration="800">
+            <img src="../../assets/11.jpg" alt="Gambar 3" class="border border-white w-full h-full rounded-xl object-cover" />
+          </div>
+          <div class="rounded-xl row-span-2  bg-white" data-aos="zoom-in" data-aos-duration="800">
+            <img src="../../assets/9.jpg" alt="Gambar 4" class="border border-white w-full h-full rounded-xl object-cover" />
+          </div>
+        </div>
+    </section>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

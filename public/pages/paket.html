@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body class="overflow-x-hidden">
+  <body class="min-h-screen flex flex-col overflow-x-hidden">
     <header class="bg-[#447EBE]">
       <!-- Navbar -->
       <nav class="shadow-md p-4 text-white font-Jersey tracking-wider">
@@ -35,8 +35,8 @@
       </nav>
     </header>
 
-    <main class="overflow-x-hidden">
-      <section class="h-max py-4 bg-cover bg-center bg-[url('../../assets/txtr5.jpg')] bg-white bg-blend-multiply">
+    <main class="flex-1 overflow-x-hidden">
+      <section class="py-4 bg-cover bg-center bg-[url('../../assets/txtr5.jpg')] bg-white bg-blend-multiply">
 
         <h2 class="text-xl font-Jersey mb-3 text-center text-[#447EBE]">Paket Haji & Umroh ZBU</h2>
         <div class="w-11/12 mx-auto overflow-x-auto whitespace-nowrap flex justify-start gap-2 text-xs font-medium md:justify-center sm:gap-3 sm:text-sm" id="categoryTabs">
@@ -57,8 +57,9 @@
         <p id="noPromoMessage" class="text-center text-gray-500 hidden mt-6">Promo paket belum tersedia.</p>
 
       </section>
+    </main>
     <!-- Footer -->
-    <footer class="bg-[url('../assets/txtr3-50.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply text-white py-3 ">
+    <footer class="bg-[url('../../assets/txtr3-50.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply text-white py-3 ">
       <div class="container px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         <!-- Lokasi dan Maps -->
         <div class="items-center">
@@ -111,7 +112,6 @@
       </div>
       <p class="text-gray-300 text-xs text-center mt-4 font-bold">© 2025 PT. Zamzam Berkah Utama Tour & Travel</p>
     </footer>
-  </main>
 
   <!-- Floating WhatsApp Button with SVG -->
   <div class="fixed bottom-5 right-5 z-50">

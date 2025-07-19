@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
-  <body class="">
+  <body class="min-h-screen flex flex-col overflow-x-hidden">
     <header class="bg-[#447EBE]">
       <!-- Navbar -->
       <nav class="shadow-md p-4 text-white font-Jersey tracking-wider">
@@ -50,7 +50,7 @@
       </nav>
     </header>
 
-    <main class="overflow-x-hidden w-screen">
+    <main class="flex-1 overflow-x-hidden w-screen">
       <!-- Hero -->
       <section class="" >
         <div class="mySwiper w-full h-[13rem] relative">
@@ -276,61 +276,62 @@
           </div>
       </section>
       
-      <!-- Footer -->
-      <footer class="bg-[url('../assets/txtr3-50.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply text-white py-3 ">
-        <div class="container px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-          <!-- Lokasi dan Maps -->
-          <div class="items-center">
-            <h2 class="font-bold text-md mb-1">Lokasi Kantor</h2>
-            <p class="text-xs">
-              Jl. Simo Pomahan Baru No. 70A
-              <br />
-              Kel. Simomulyo Baru, Kec. Sukomanunggal
-              <br />
-              Kota Surabaya
-            </p>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.867210227695!2d112.70925587580892!3d-7.255950271284505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7ff436718e947%3A0x2d5d48efd568b904!2sZAMZAM%20BERKAH%20UTAMA%20TOUR%20%26%20TRAVEL!5e0!3m2!1sid!2sid!4v1752401203873!5m2!1sid!2sid"
-              width="w-full max-w-full"
-              height="100"
-              class="mt-4 rounded-md"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-  
-          <!-- Info Perusahaan -->
-          <div class="hidden">
-            <h2 class="font-bold text-lg mb-2">PT. Zamzam Berkah Utama</h2>
-            <p class="mb-2">Agen travel ibadah Haji dan Umrah dengan pengalaman lebih dari 10 tahun melayani jamaah dengan amanah dan berkualitas.</p>
-            <p class="mb-2">Memiliki legalitas resmi yang terdaftar:</p>
-            <ul class="list-disc pl-5">
-              <li>SK PPIU No. 357 Tahun 2021</li>
-              <li>PIHK No. 91201099910020001</li>
-            </ul>
-          </div>
-  
-          <!-- Kontak & Sosial Media -->
-          <div class="">
-            <h2 class="font-bold text-md mb-1">Kontak Kami</h2>
-            <p class="text-xs">
-              WhatsApp: 0812-3456-7890
-              <br />
-              Email: info@zamzamtour.com
-            </p>
-            <div class="flex space-x-2 mt-4">
-              <a href="#" aria-label="WhatsApp"><img src="../assets/Icon/inverted_whatsapp.png" alt="WhatsApp" class="w-6 h-6" /></a>
-              <a href="#" aria-label="Instagram"><img src="../assets/Icon/inverted_instagram.png" alt="Instagram" class="w-6 h-6" /></a>
-              <a href="#" aria-label="Facebook"><img src="../assets/Icon/inverted_facebook.png" alt="Facebook" class="w-6 h-6" /></a>
-              <a href="#" aria-label="Tiktok"><img src="../assets/Icon/inverted_tiktok.png" alt="Tiktok" class="w-6 h-6" /></a>
-              <a href="#" aria-label="YouTube"><img src="../assets/Icon/inverted_youtube.png" alt="YouTube" class="w-6 h-6" /></a>
-            </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-[url('../assets/txtr3-50.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply text-white py-3 ">
+      <div class="container px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <!-- Lokasi dan Maps -->
+        <div class="items-center">
+          <h2 class="font-bold text-md mb-1">Lokasi Kantor</h2>
+          <p class="text-xs">
+            Jl. Simo Pomahan Baru No. 70A
+            <br />
+            Kel. Simomulyo Baru, Kec. Sukomanunggal
+            <br />
+            Kota Surabaya
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.867210227695!2d112.70925587580892!3d-7.255950271284505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7ff436718e947%3A0x2d5d48efd568b904!2sZAMZAM%20BERKAH%20UTAMA%20TOUR%20%26%20TRAVEL!5e0!3m2!1sid!2sid!4v1752401203873!5m2!1sid!2sid"
+            width="w-full max-w-full"
+            height="100"
+            class="mt-4 rounded-md"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- Info Perusahaan -->
+        <div class="hidden">
+          <h2 class="font-bold text-lg mb-2">PT. Zamzam Berkah Utama</h2>
+          <p class="mb-2">Agen travel ibadah Haji dan Umrah dengan pengalaman lebih dari 10 tahun melayani jamaah dengan amanah dan berkualitas.</p>
+          <p class="mb-2">Memiliki legalitas resmi yang terdaftar:</p>
+          <ul class="list-disc pl-5">
+            <li>SK PPIU No. 357 Tahun 2021</li>
+            <li>PIHK No. 91201099910020001</li>
+          </ul>
+        </div>
+
+        <!-- Kontak & Sosial Media -->
+        <div class="">
+          <h2 class="font-bold text-md mb-1">Kontak Kami</h2>
+          <p class="text-xs">
+            WhatsApp: 0812-3456-7890
+            <br />
+            Email: info@zamzamtour.com
+          </p>
+          <div class="flex space-x-2 mt-4">
+            <a href="#" aria-label="WhatsApp"><img src="../assets/Icon/inverted_whatsapp.png" alt="WhatsApp" class="w-6 h-6" /></a>
+            <a href="#" aria-label="Instagram"><img src="../assets/Icon/inverted_instagram.png" alt="Instagram" class="w-6 h-6" /></a>
+            <a href="#" aria-label="Facebook"><img src="../assets/Icon/inverted_facebook.png" alt="Facebook" class="w-6 h-6" /></a>
+            <a href="#" aria-label="Tiktok"><img src="../assets/Icon/inverted_tiktok.png" alt="Tiktok" class="w-6 h-6" /></a>
+            <a href="#" aria-label="YouTube"><img src="../assets/Icon/inverted_youtube.png" alt="YouTube" class="w-6 h-6" /></a>
           </div>
         </div>
-        <p class="text-gray-300 text-xs text-center mt-4 font-bold">© 2025 PT. Zamzam Berkah Utama Tour & Travel</p>
-      </footer>
-    </main>
+      </div>
+      <p class="text-gray-300 text-xs text-center mt-4 font-bold">© 2025 PT. Zamzam Berkah Utama Tour & Travel</p>
+    </footer>
 
     <!-- Floating WhatsApp Button with SVG -->
     <div class="fixed bottom-5 right-5 z-50">

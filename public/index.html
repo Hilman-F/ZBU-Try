@@ -12,21 +12,27 @@
   <body class="min-h-screen flex flex-col overflow-x-hidden">
     <header class="bg-[#447EBE]">
       <!-- Navbar -->
-      <nav class="shadow-md p-4 text-white font-Jersey tracking-wider">
+      <nav class="shadow-md py-4 px-4 text-white font-Jersey tracking-wider sm:px-6 md:px-8">
         <div class="flex items-center justify-between">
           <!-- Logo -->
-          <a href="index.html"><img src="../assets/logo.png" alt="Logo" class="w-40" /></a>
+          <a href="index.html"><img src="../assets/logo.png" alt="Logo" class="w-40 sm:w-44 lg:w-56" /></a>
 
           <!-- Hamburger -->
-          <button id="menu-btn" aria-label="Menu" class="cursor-pointer block md:hidden focus:outline-none">
+          <button id="menu-btn" aria-label="Menu" class="cursor-pointer block focus:outline-none lg:hidden">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
+
+          <div class="hidden space-x-4 text-lg font-Jersey tracking-wider items-center lg:flex">
+            <a href="pages/paket.html" class="block px-2 py-2 hover:bg-[#366ba1] rounded">Paket ZBU</a>
+            <a href="pages/galeri.html" class="block px-2 py-2 hover:bg-[#366ba1] rounded">Galeri</a>
+            <a href="pages/tentang-kami.html" class="block px-2 py-2 hover:bg-[#366ba1] rounded">Tentang Kami</a>
+          </div>
         </div>
         
         <!-- Menu List -->
-        <div id="menu" class="mt-4 space-y-2 md:hidden hidden">
+        <div id="menu" class="mt-4 space-y-2 hidden">
           <a href="pages/paket.html" class="block px-2 py-2 hover:bg-[#366ba1] rounded">Paket ZBU</a>
           <a href="pages/galeri.html" class="block px-2 py-2 hover:bg-[#366ba1] rounded">Galeri</a>
           <a href="pages/tentang-kami.html" class="block px-2 py-2 hover:bg-[#366ba1] rounded">Tentang Kami</a>
@@ -47,13 +53,14 @@
           </div> -->
 
         </div>
+        
       </nav>
     </header>
 
     <main class="flex-1 overflow-x-hidden w-screen">
       <!-- Hero -->
       <section class="" >
-        <div class="mySwiper w-full h-[13rem] relative">
+        <div class="mySwiper w-full h-[13rem] relative sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[35rem] 2xl:h-[40rem]">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="../assets/Slider/1.jpg" alt="1" class="w-full h-full object-cover object-center" />
@@ -73,96 +80,83 @@
       </section>
 
       <!-- Mengapa? -->
-      <section class="bg-[url('../assets/txtr3-50.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply text-white py-3 ">
+      <section class="bg-[url('../../assets/txtr5.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply text-white py-3 sm:py-5">
         <div class="container mx-auto">
-          <h1 class="text-xl font-Jersey tracking-wide mb-4 text-center">Mengapa Harus ZBU</h1>
-          <div class="grid grid-cols-1 gap-4 items-center">
-            <!-- Legalitas Resmi -->
-            <div class="" data-aos="fade-right" data-aos-duration="500">
-              <div class="px-9 rounded-md flex items-center gap-4 ">                
-                <img src="../assets/Guarantee.png" alt="Guarantee" class="w-10" />
-
-                <div class="">
-                  <h2 class="font-Jersey text-lg">Legalitas Resmi</h2>
-                  <p class="text-xs">Terdaftar resmi di</p>
-                  <ul class="text-xs list-disc pl-5">
-                    <li>PPIU No. 357 Tahun 2021</li>
-                    <li>PIHK No. 91201099910020001</li>
-                  </ul>
-                </div>
-              </div>
+          <h1 class="text-xl font-Jersey tracking-wide mb-4 text-center sm:text-2xl lg:text-3xl 2xl:text-4xl">Mengapa Harus ZBU</h1>
+          <div class="lg:flex lg:justify-center lg:items-center lg:px-10">
+            <div class="hidden lg:block lg:aspect-square">
+              <img src="../assets/kabah.png" alt="Kaaba" class="w-[30rem] rounded-xl">
             </div>
-
-            <div class="" data-aos="fade-left" data-aos-duration="500">
-              <div class="px-9 rounded-md flex items-center gap-4 ">
-                <img src="../assets/Airplane Take Off.png" alt="Airplane" class="w-10" />
-
-                <div class="">
-                  <h2 class="font-Jersey text-lg">Penerbangan Langsung</h2>
-                  <p class="text-xs">Nikmati perjalanan lancar dengan maskapai pilihan terbaik untuk kenyamanan maksimal</p>
+            <div class="grid grid-cols-1 gap-4 items-center md:grid-cols-2 md:px-3 lg:px-0 lg:gap-2 xl:gap-y-4">
+              
+              <!-- Legalitas Resmi -->
+                <div class="px-9 rounded-md flex items-center gap-4 lg:px-5" data-aos="fade-right" data-aos-duration="500">                
+                  <img src="../assets/Guarantee.png" alt="Guarantee" class="w-10 md:w-14" />
+  
+                  <div class="">
+                    <h2 class="font-Jersey text-lg lg:text-xl">Legalitas Resmi</h2>
+                    <p class="text-xs lg:text-sm">Terdaftar resmi di</p>
+                    <ul class="text-xs lg:text-sm list-disc pl-5">
+                      <li>PPIU No. 357 Tahun 2021</li>
+                      <li>PIHK No. 91201099910020001</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="" data-aos="fade-right" data-aos-duration="1000">
-              <div class="px-9 rounded-md flex items-center gap-4 ">
-                <!-- Icon -->
-                <img src="../assets/Kaaba.png" alt="kaaba" class="w-10" />
-
-                <!-- Text content -->
-                <div class="">
-                  <h2 class="font-Jersey text-lg">Berpengalaman</h2>
-                  <p class="text-xs">Berpengalaman lebih dari 10 tahun</p>
+  
+                <div class="px-9 rounded-md flex items-center gap-4 lg:px-5" data-aos="fade-right" data-aos-duration="500">                
+                  <img src="../assets/Airplane Take Off.png" alt="Airplane" class="w-10 md:w-14" />
+  
+                  <div class="">
+                    <h2 class="font-Jersey text-lg lg:text-xl">Penerbangan Langsung</h2>
+                    <p class="text-xs lg:text-sm">Nikmati perjalanan lancar dengan maskapai pilihan terbaik untuk kenyamanan maksimal</p>
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="" data-aos="fade-left" data-aos-duration="1000">
-              <div class="px-9 rounded-md flex items-center gap-4 ">
-                <!-- Icon -->
-                <img src="../assets/Passport and Tickets.png" alt="Passport" class="w-10" />
-
-                <!-- Text content -->
-                <div class="">
-                  <h2 class="font-Jersey text-lg">Jadwal Pasti</h2>
-                  <p class="text-xs">Jadwal keberangkatan yang pasti</p>
+  
+                <div class="px-9 rounded-md flex items-center gap-4 lg:px-5" data-aos="fade-right" data-aos-duration="500">                
+                  <img src="../assets/Kaaba.png" alt="kaaba" class="w-10 md:w-14" />
+  
+                  <div class="">
+                    <h2 class="font-Jersey text-lg lg:text-xl">Berpengalaman</h2>
+                    <p class="text-xs lg:text-sm">Berpengalaman lebih dari 10 tahun</p>
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="" data-aos="fade-right" data-aos-duration="1500">
-              <div class="px-9 rounded-md flex items-center gap-4 ">
-                <!-- Icon -->
-                <img src="../assets/Tourist Guide.png" alt="Guide" class="w-10" />
-
-                <!-- Text content -->
-                <div class="">
-                  <h2 class="font-Jersey text-lg">Pelayanan Terbaik</h2>
-                  <p class="text-xs">Berkomitmen memberikan pelayanan yang terbaik dengan Muthowif yang berpengalaman</p>
+  
+                <div class="px-9 rounded-md flex items-center gap-4 lg:px-5" data-aos="fade-right" data-aos-duration="500">                
+                  <img src="../assets/Passport and Tickets.png" alt="Passport" class="w-10 md:w-14" />
+  
+                  <div class="">
+                    <h2 class="font-Jersey text-lg lg:text-xl">Jadwal Pasti</h2>
+                    <p class="text-xs lg:text-sm">Jadwal keberangkatan yang pasti</p>
+                  </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="" data-aos="fade-left" data-aos-duration="1500">
-              <div class="px-9 rounded-md flex items-center gap-4 ">
-                <!-- Icon -->
-                <img src="../assets/Hotel Star.png" alt="Hotel" class="w-10" />
-
-                <!-- Text content -->
-                <div class="">
-                  <h2 class="font-Jersey text-lg">Hotel Berkualitas</h2>
-                  <p class="text-xs">Akomodasi berkualitas dengan fasilitas lengkap</p>
+  
+                <div class="px-9 rounded-md flex items-center gap-4 lg:px-5" data-aos="fade-right" data-aos-duration="500">                
+                  <img src="../assets/Tourist Guide.png" alt="Guide" class="w-10 md:w-14" />
+  
+                  <div class="">
+                    <h2 class="font-Jersey text-lg lg:text-xl">Pelayanan Terbaik</h2>
+                    <p class="text-xs lg:text-sm">Berkomitmen memberikan pelayanan yang terbaik dengan Muthowif yang berpengalaman</p>
+                  </div>
                 </div>
-              </div>
+  
+                <div class="px-9 rounded-md flex items-center gap-4 lg:px-5" data-aos="fade-right" data-aos-duration="500">                
+                  <img src="../assets/Hotel Star.png" alt="Hotel" class="w-10 md:w-14" />
+  
+                  <div class="">
+                    <h2 class="font-Jersey text-lg lg:text-xl">Hotel Berkualitas</h2>
+                    <p class="text-xs lg:text-sm">Akomodasi berkualitas dengan fasilitas lengkap</p>
+                  </div>
+                </div>
             </div>
           </div>
+
       </section>
 
       <!-- Paket ZBU -->
-      <section class="py-3 bg-[url('../assets/txtr3-50.jpg')] bg-cover bg-center ">
-          <h2 class="text-xl font-Jersey mb-3 text-center text-[#447EBE]">Paket Umroh & Haji ZBU</h2>
+      <section class="bg-[url('../../assets/txtr5.jpg')] bg-cover bg-center py-3 sm:py-5">
+          <h2 class="text-xl font-Jersey mb-3 text-center text-[#447EBE] sm:text-2xl lg:text-3xl 2xl:text-4xl">Paket Umroh & Haji ZBU</h2>
           <!-- filter -->
-          <div class="w-11/12 mx-auto overflow-x-auto whitespace-nowrap flex justify-start gap-2 text-xs font-medium md:justify-center sm:gap-3 sm:text-sm" id="categoryTabs">
+          <div class="w-11/12 mx-auto overflow-x-auto whitespace-nowrap flex justify-start gap-2 text-xs font-medium sm:justify-center sm:gap-3 sm:text-sm lg:text-base 2xl:text-xl" id="categoryTabs">
             <button class="tab-btn active-category cursor-pointer px-3 py-1 rounded-full border border-[#447EBE] text-[#447EBE] hover:bg-[#447EBE] hover:text-white transition-colors duration-310" data-category="all">Semua</button>
             <button class="tab-btn cursor-pointer px-3 py-1 rounded-full border border-[#447EBE] text-[#447EBE] hover:bg-[#447EBE] hover:text-white transition-colors duration-300" data-category="best">Best Seller</button>
             <button class="tab-btn cursor-pointer px-3 py-1 rounded-full border border-[#447EBE] text-[#447EBE] hover:bg-[#447EBE] hover:text-white transition-colors duration-300" data-category="hemat">Hemat</button>
@@ -172,7 +166,7 @@
             <button class="tab-btn cursor-pointer px-3 py-1 rounded-full border border-[#447EBE] text-[#447EBE] hover:bg-[#447EBE] hover:text-white transition-colors duration-300" data-category="vvip">VVIP</button>
           </div>
           
-          <div id="promoContainer" class="w-11/12 grid grid-cols-1 mx-auto">
+          <div id="promoContainer" class="w-11/12 grid grid-cols-1 mx-auto md:px-3">
             <!-- Promo items akan dimasukkan di sini via JS -->
           </div>
   
@@ -186,33 +180,42 @@
       </section>
 
       <!-- Galeri -->
-      <section class="bg-[url('../assets/txtr3-50.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply py-3 ">
-          <h2 class="text-xl text-white font-Jersey mb-3 text-center">Galeri Kegiatan ZBU</h2>
-          <div class="grid grid-cols-2 grid-rows-5 gap-2 px-5">
+      <section class="bg-[url('../../assets/txtr5.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply py-3 sm:py-5">
+          <h2 class="text-xl text-white font-Jersey mb-3 text-center sm:text-2xl lg:text-3xl 2xl:text-4xl">Galeri Kegiatan ZBU</h2>
+          <div class="grid grid-cols-2 grid-rows-5 gap-2 px-5 sm:w-11/12 sm:mx-auto sm:px-0 md:px-3 lg:grid-cols-3 lg:grid-rows-8 lg:gap-3">
             <div class="rounded-xl row-span-3 bg-white" data-aos="zoom-in" data-aos-duration="800">
               <img src="../assets/6.jpg" alt="Gambar 1" class="border border-white w-full h-full rounded-xl object-cover" />
             </div>
-            <div class="rounded-xl row-span-2  bg-white" data-aos="zoom-in" data-aos-duration="800">
+            <div class="rounded-xl row-span-2 col-start-1 row-start-4 bg-white" data-aos="zoom-in" data-aos-duration="800">
               <img src="../assets/10.jpg" alt="Gambar 2" class="border border-white w-full h-full rounded-xl object-cover" />
             </div>
-            <div class="rounded-xl row-span-3  bg-white" data-aos="zoom-in" data-aos-duration="800">
+            <div class="rounded-xl row-span-3 col-start-2 row-start-3 bg-white" data-aos="zoom-in" data-aos-duration="800">
               <img src="../assets/11.jpg" alt="Gambar 3" class="border border-white w-full h-full rounded-xl object-cover" />
             </div>
-            <div class="rounded-xl row-span-2  bg-white" data-aos="zoom-in" data-aos-duration="800">
+            <div class="rounded-xl row-span-2 col-start-2 row-start-1 bg-white" data-aos="zoom-in" data-aos-duration="800">
+              <img src="../assets/9.jpg" alt="Gambar 4" class="border border-white w-full h-full rounded-xl object-cover" />
+            </div>
+            <div class="hidden rounded-xl row-span-3 col-start-3 row-start-1 bg-white lg:block" data-aos="zoom-in" data-aos-duration="800">
+              <img src="../assets/9.jpg" alt="Gambar 4" class="border border-white w-full h-full rounded-xl object-cover" />
+            </div>
+            <div class="hidden rounded-xl row-span-2 col-start-3 row-start-4 bg-white lg:block" data-aos="zoom-in" data-aos-duration="800">
+              <img src="../assets/9.jpg" alt="Gambar 4" class="border border-white w-full h-full rounded-xl object-cover" />
+            </div>
+            <div class="hidden rounded-xl col-span-3 row-span-3 row-start-6 bg-white lg:block" data-aos="zoom-in" data-aos-duration="800">
               <img src="../assets/9.jpg" alt="Gambar 4" class="border border-white w-full h-full rounded-xl object-cover" />
             </div>
           </div>
           
           <div class="flex justify-center mt-4">
-            <a href="./pages/galeri.html" class="text-white font-bold px-2 py-1 rounded-md text-xs border border-white hover:border hover:border-[#366BA1] hover:bg-[#366ba1] hover:text-white">Lihat Semua</a>
+            <a href="./pages/galeri.html" class="text-white font-bold px-2 py-1 rounded-md text-xs border border-white hover:border hover:border-[#366BA1] hover:bg-[#366ba1] hover:text-white sm:text-sm lg:text-lg 2xl:text-xl">Lihat Semua</a>
           </div>
       </section>
 
       <!-- Testimoni -->
-      <section class="py-3 bg-[url('../assets/txtr3-50.jpg')] bg-cover bg-center ">
-          <h2 class=" text-xl font-Jersey mb-4 text-center text-[#447EBE]">Testimoni Jamaah</h2>
+      <section class="bg-[url('../../assets/txtr5.jpg')] bg-cover bg-center py-3 sm:py-5">
+          <h2 class=" text-xl font-Jersey mb-4 text-center text-[#447EBE] sm:text-2xl lg:text-3xl 2xl:text-4xl">Testimoni Jamaah</h2>
       
-          <div class="w-11/12 mx-auto flex gap-4 overflow-x-auto md:grid md:grid-cols-2 md:w-full md:overflow-visible">
+          <div class="w-11/12 mx-auto flex gap-4 overflow-x-auto md:grid md:grid-cols-2 md:overflow-visible md:px-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
             <div class="bg-[#447EBE] text-white p-2 rounded-xl text-center min-w-40 md:w-full shadow-lg">
               <img src="../assets/profile1.png" alt="Profile 1" class="w-16 h-16 mx-auto rounded-full bg-white border-4 border-white object-cover" />
               <h3 class="mt-0.5 font-semibold text-lg">Jamaah 1</h3>
@@ -279,12 +282,12 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[url('../assets/txtr3-50.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply text-white py-3 ">
-      <div class="container px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+    <footer class="bg-[url('../../assets/txtr5.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply text-white py-3 sm:py-5">
+      <div class="container px-4 grid grid-cols-1 gap-6 sm:px-6 sm:grid-cols-3 sm:gap-8 md:grid-cols-3 lg:grid-cols-3 lg:px-8">
         <!-- Lokasi dan Maps -->
         <div class="items-center">
-          <h2 class="font-bold text-md mb-1">Lokasi Kantor</h2>
-          <p class="text-xs">
+          <h2 class="font-bold text-base mb-1 lg:text-xl">Lokasi Kantor</h2>
+          <p class="text-xs lg:text-sm">
             Jl. Simo Pomahan Baru No. 70A
             <br />
             Kel. Simomulyo Baru, Kec. Sukomanunggal
@@ -293,7 +296,7 @@
           </p>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.867210227695!2d112.70925587580892!3d-7.255950271284505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7ff436718e947%3A0x2d5d48efd568b904!2sZAMZAM%20BERKAH%20UTAMA%20TOUR%20%26%20TRAVEL!5e0!3m2!1sid!2sid!4v1752401203873!5m2!1sid!2sid"
-            width="w-full max-w-full"
+            width="100%"
             height="100"
             class="mt-4 rounded-md"
             allowfullscreen=""
@@ -303,30 +306,30 @@
         </div>
 
         <!-- Info Perusahaan -->
-        <div class="hidden">
-          <h2 class="font-bold text-lg mb-2">PT. Zamzam Berkah Utama</h2>
-          <p class="mb-2">Agen travel ibadah Haji dan Umrah dengan pengalaman lebih dari 10 tahun melayani jamaah dengan amanah dan berkualitas.</p>
+        <div class="hidden sm:block text-xs lg:text-sm">
+          <h2 class="font-bold text-base mb-2 lg:text-xl">PT. Zamzam Berkah Utama</h2>
+          <p class="mb-2 text-justify">Agen travel ibadah Haji dan Umrah dengan pengalaman lebih dari 10 tahun melayani jamaah dengan amanah dan berkualitas.</p>
           <p class="mb-2">Memiliki legalitas resmi yang terdaftar:</p>
           <ul class="list-disc pl-5">
             <li>SK PPIU No. 357 Tahun 2021</li>
-            <li>PIHK No. 91201099910020001</li>
+            <li>SK PIHK No. 91201099910020001</li>
           </ul>
         </div>
 
         <!-- Kontak & Sosial Media -->
         <div class="">
-          <h2 class="font-bold text-md mb-1">Kontak Kami</h2>
-          <p class="text-xs">
-            WhatsApp: 0812-3456-7890
+          <h2 class="font-bold text-md mb-1 lg:text-xl">Kontak Kami</h2>
+          <p class="text-xs lg:text-sm">
+            WhatsApp: 0821-4355-1888
             <br />
-            Email: info@zamzamtour.com
+            <!-- Email: info@zamzamtour.com -->
           </p>
-          <div class="flex space-x-2 mt-4">
-            <a href="#" aria-label="WhatsApp"><img src="../assets/Icon/inverted_whatsapp.png" alt="WhatsApp" class="w-6 h-6" /></a>
-            <a href="#" aria-label="Instagram"><img src="../assets/Icon/inverted_instagram.png" alt="Instagram" class="w-6 h-6" /></a>
-            <a href="#" aria-label="Facebook"><img src="../assets/Icon/inverted_facebook.png" alt="Facebook" class="w-6 h-6" /></a>
-            <a href="#" aria-label="Tiktok"><img src="../assets/Icon/inverted_tiktok.png" alt="Tiktok" class="w-6 h-6" /></a>
-            <a href="#" aria-label="YouTube"><img src="../assets/Icon/inverted_youtube.png" alt="YouTube" class="w-6 h-6" /></a>
+          <div class="flex space-x-2 mt-4 ">
+            <a href="https://wa.me/6282143551888" aria-label="WhatsApp"><img src="../assets/Icon/inverted_whatsapp.png" alt="WhatsApp" class="w-6 h-6 lg:w-8 lg:h-8" /></a>
+            <a href="https://www.instagram.com/zbutravel/" aria-label="Instagram"><img src="../assets/Icon/inverted_instagram.png" alt="Instagram" class="w-6 h-6 lg:w-8 lg:h-8" /></a>
+            <a href="https://web.facebook.com/profile.php?id=100010957997098" aria-label="Facebook"><img src="../assets/Icon/inverted_facebook.png" alt="Facebook" class="w-6 h-6 lg:w-8 lg:h-8" /></a>
+            <a href="https://www.tiktok.com/@zbutravel" aria-label="Tiktok"><img src="../assets/Icon/inverted_tiktok.png" alt="Tiktok" class="w-6 h-6 lg:w-8 lg:h-8" /></a>
+            <a href="https://www.youtube.com/@zamzamberkahutama3336" aria-label="YouTube"><img src="../assets/Icon/inverted_youtube.png" alt="YouTube" class="w-6 h-6 lg:w-8 lg:h-8" /></a>
           </div>
         </div>
       </div>
@@ -336,7 +339,7 @@
     <!-- Floating WhatsApp Button with SVG -->
     <div class="fixed bottom-5 right-5 z-50">
       <a
-        href="https://wa.me/6281234567890"
+        href="https://wa.me/6282143551888"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat via WhatsApp"

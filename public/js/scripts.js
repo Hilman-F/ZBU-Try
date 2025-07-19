@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const promoTitle = document.getElementById("promoTitle");
 
   const promoData = {
-    "best": ["../../assets/paket/fix2-nb-01.png"],
+    best: ["../../assets/paket/fix2-nb-01.png"],
     hemat: ["../../assets/paket/fix2-nb-01.png"],
     promo: [],
     berkah: ["../../assets/paket/fix2-nb-01.png"],
@@ -100,24 +100,33 @@ document.addEventListener("DOMContentLoaded", function () {
         // Tombol Daftar Sekarang
         const daftarBtn = document.createElement("a");
         daftarBtn.href = "#daftar";
-        daftarBtn.textContent = "Daftar!";
-        daftarBtn.className = "absolute top-[86%] left-[35%] -translate-x-1/2 -translate-y-1/2 " + "bg-white text-[#447EBE] text-[0.25rem] font-bold px-1 py-0.5 rounded-full shadow-lg " + "hover:bg-blue-100 transition z-10";
+        daftarBtn.textContent = "Daftar";
+        daftarBtn.className =
+          "absolute top-[86%] left-[35%] -translate-x-1/2 -translate-y-1/2 " +
+          "bg-white text-[#447EBE] text-[0.25rem] font-bold px-1 py-0.5 rounded-full shadow-lg sm:text-[0.5rem] md:text-xs lg:text-base lg:px-2 lg:py-1 2xl:text-xl " +
+          "hover:bg-blue-100 transition z-10";
 
         // Tombol Hubungi Kami
         const hubungiBtn = document.createElement("a");
-        hubungiBtn.href = "https://wa.me/6281234567890";
-        hubungiBtn.textContent = "Hubungi Kami";
-        hubungiBtn.className = "absolute top-[86%] left-[45%] -translate-x-1/2 -translate-y-1/2 " + "bg-[#447EBE] text-white text-[0.25rem] font-bold px-1 py-0.5 rounded-full shadow-lg " + "hover:bg-blue-100 transition z-10";
+        hubungiBtn.href = "https://wa.me/6282143551888";
+        hubungiBtn.className =
+          "absolute top-[86%] left-[45%] -translate-x-1/2 -translate-y-1/2 lg:left-[46%] " +
+          "bg-[#447EBE] text-white text-[0.25rem] font-bold px-1 py-0.5 rounded-full shadow-lg sm:text-[0.5rem] md:text-xs lg:text-base lg:px-2 lg:py-1 2xl:text-xl " +
+          "hover:bg-blue-100 transition z-10 flex items-center space-x-1";
+        
+        const spanText = document.createElement("span");
+        spanText.textContent = "WhatsApp";
 
         // Icon Whatsapp
         const whatsappIcon = document.createElement("img");
-        whatsappIcon.src = "../assets/Icon/WhatsApp-w.png";
+        whatsappIcon.src = "../../assets/Icon/WhatsApp-w.png";
         whatsappIcon.alt = "Icon Whatsapp";
-        whatsappIcon.className = "w-1.5 h-1.5 inline-block mr-0.5";
-        hubungiBtn.prepend(whatsappIcon);
+        whatsappIcon.className = "w-1.5 h-1.5 inline-block ml-0.5 sm:w-2 sm:h-2 md:w-3 md:h-3 lg:w-4 lg:h-4 2xl:w-5 2xl:h-5";
+        hubungiBtn.appendChild(whatsappIcon);
+        hubungiBtn.appendChild(spanText);
 
         // wrapper.appendChild(hubungiBtn);
-
+        
         promoContainer.appendChild(wrapper);
         wrapper.appendChild(img);
         wrapper.appendChild(daftarBtn);

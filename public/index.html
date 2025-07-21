@@ -10,12 +10,12 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="min-h-screen flex flex-col overflow-x-hidden">
-    <header class="bg-[#447EBE]">
+    <header class="bg-[#447EBE] w-screen mx-auto max-w-screen-xl">
       <!-- Navbar -->
-      <nav class="shadow-md py-4 px-4 text-white font-Jersey tracking-wider sm:px-6 md:px-8">
+      <nav class="shadow-md py-4 px-4 mx-auto text-white font-Jersey tracking-wider sm:px-6 md:px-10 lg:px-14 xl:px-16">
         <div class="flex items-center justify-between">
           <!-- Logo -->
-          <a href="index.html"><img src="../assets/logo.png" alt="Logo" class="w-40 sm:w-44 lg:w-56" /></a>
+          <a href="../index.html"><img src="../../assets/logo.png" alt="Logo" class="w-40 sm:w-44 lg:w-56" /></a>
 
           <!-- Hamburger -->
           <button id="menu-btn" aria-label="Menu" class="cursor-pointer block focus:outline-none lg:hidden">
@@ -24,13 +24,13 @@
             </svg>
           </button>
 
-          <div class="hidden space-x-4 text-lg font-Jersey tracking-wider items-center lg:flex">
+          <div class="hidden space-x-4 text-xl font-Jersey tracking-wider items-center lg:flex">
             <a href="pages/paket.html" class="block px-2 py-2 hover:bg-[#366ba1] rounded">Paket ZBU</a>
             <a href="pages/galeri.html" class="block px-2 py-2 hover:bg-[#366ba1] rounded">Galeri</a>
             <a href="pages/tentang-kami.html" class="block px-2 py-2 hover:bg-[#366ba1] rounded">Tentang Kami</a>
           </div>
         </div>
-        
+
         <!-- Menu List -->
         <div id="menu" class="mt-4 space-y-2 hidden">
           <a href="pages/paket.html" class="block px-2 py-2 hover:bg-[#366ba1] rounded">Paket ZBU</a>
@@ -51,16 +51,14 @@
               <a href="#" class="block px-4 py-2 hover:bg-[#5d95d2]">Wisata Halal</a>
             </div>
           </div> -->
-
         </div>
-        
       </nav>
     </header>
 
-    <main class="flex-1 overflow-x-hidden w-screen">
+    <main class="flex-1 overflow-x-hidden w-screen mx-auto max-w-screen-xl">
       <!-- Hero -->
       <section class="" >
-        <div class="mySwiper w-full h-[13rem] relative sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[35rem] 2xl:h-[40rem]">
+        <div class="mySwiper w-full h-[13rem] relative sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[35rem]">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="../assets/Slider/1.jpg" alt="1" class="w-full h-full object-cover object-center" />
@@ -81,9 +79,9 @@
 
       <!-- Mengapa? -->
       <section class="bg-[url('../../assets/txtr5.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply text-white py-3 sm:py-5">
-        <div class="container mx-auto">
-          <h1 class="text-xl font-Jersey tracking-wide mb-4 text-center sm:text-2xl lg:text-3xl 2xl:text-4xl">Mengapa Harus ZBU</h1>
-          <div class="lg:flex lg:justify-center lg:items-center lg:px-10">
+        <div class="container mx-auto sm:px-6 md:px-10 lg:px-14 xl:px-16">
+          <h1 class="text-xl font-Jersey tracking-wide mb-4 text-center sm:text-2xl lg:text-3xl xl:text-4xl">Mengapa Harus ZBU</h1>
+          <div class="lg:flex lg:justify-center lg:items-center">
             <div class="hidden lg:block lg:aspect-square">
               <img src="../assets/kabah.png" alt="Kaaba" class="w-[30rem] rounded-xl">
             </div>
@@ -153,10 +151,10 @@
       </section>
 
       <!-- Paket ZBU -->
-      <section class="bg-[url('../../assets/txtr5.jpg')] bg-cover bg-center py-3 sm:py-5">
-          <h2 class="text-xl font-Jersey mb-3 text-center text-[#447EBE] sm:text-2xl lg:text-3xl 2xl:text-4xl">Paket Umroh & Haji ZBU</h2>
+      <section class="bg-[url('../../assets/txtr5.jpg')] bg-cover bg-center px-4 py-3 sm:py-5 sm:px-6 md:px-10 lg:px-14 xl:px-16">
+          <h2 class="text-xl font-Jersey mb-3 text-center text-[#447EBE] sm:text-2xl lg:text-3xl xl:text-4xl">Paket Umroh & Haji ZBU</h2>
           <!-- filter -->
-          <div class="w-11/12 mx-auto overflow-x-auto whitespace-nowrap flex justify-start gap-2 text-xs font-medium sm:justify-center sm:gap-3 sm:text-sm lg:text-base 2xl:text-xl" id="categoryTabs">
+          <div class="w-full mx-auto overflow-x-auto whitespace-nowrap flex justify-start gap-2 text-xs font-medium sm:justify-center sm:gap-3 sm:text-sm lg:text-base 2xl:text-xl" id="categoryTabs">
             <button class="tab-btn active-category cursor-pointer px-3 py-1 rounded-full border border-[#447EBE] text-[#447EBE] hover:bg-[#447EBE] hover:text-white transition-colors duration-310" data-category="all">Semua</button>
             <button class="tab-btn cursor-pointer px-3 py-1 rounded-full border border-[#447EBE] text-[#447EBE] hover:bg-[#447EBE] hover:text-white transition-colors duration-300" data-category="best">Best Seller</button>
             <button class="tab-btn cursor-pointer px-3 py-1 rounded-full border border-[#447EBE] text-[#447EBE] hover:bg-[#447EBE] hover:text-white transition-colors duration-300" data-category="hemat">Hemat</button>
@@ -166,7 +164,7 @@
             <button class="tab-btn cursor-pointer px-3 py-1 rounded-full border border-[#447EBE] text-[#447EBE] hover:bg-[#447EBE] hover:text-white transition-colors duration-300" data-category="vvip">VVIP</button>
           </div>
           
-          <div id="promoContainer" class="w-11/12 grid grid-cols-1 mx-auto md:px-3">
+          <div id="promoContainer" class="w-full grid grid-cols-1 mx-auto">
             <!-- Promo items akan dimasukkan di sini via JS -->
           </div>
   
@@ -180,9 +178,9 @@
       </section>
 
       <!-- Galeri -->
-      <section class="bg-[url('../../assets/txtr5.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply py-3 sm:py-5">
-          <h2 class="text-xl text-white font-Jersey mb-3 text-center sm:text-2xl lg:text-3xl 2xl:text-4xl">Galeri Kegiatan ZBU</h2>
-          <div class="grid grid-cols-2 grid-rows-5 gap-2 px-5 sm:w-11/12 sm:mx-auto sm:px-0 md:px-3 lg:grid-cols-3 lg:grid-rows-8 lg:gap-3">
+      <section class="bg-[url('../../assets/txtr5.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply py-3 sm:py-5 sm:px-6 md:px-10 lg:px-14 xl:px-16">
+          <h2 class="text-xl text-white font-Jersey mb-3 text-center sm:text-2xl lg:text-3xl xl:text-4xl">Galeri Kegiatan ZBU</h2>
+          <div class="grid grid-cols-2 grid-rows-5 gap-2 px-4 w-full sm:mx-auto sm:px-0 md:px-3 lg:grid-cols-3 lg:grid-rows-8 lg:gap-3">
             <div class="rounded-xl row-span-3 bg-white" data-aos="zoom-in" data-aos-duration="800">
               <img src="../assets/6.jpg" alt="Gambar 1" class="border border-white w-full h-full rounded-xl object-cover" />
             </div>
@@ -212,10 +210,10 @@
       </section>
 
       <!-- Testimoni -->
-      <section class="bg-[url('../../assets/txtr5.jpg')] bg-cover bg-center py-3 sm:py-5">
+      <section class="bg-[url('../../assets/txtr5.jpg')] bg-cover bg-center px-4 py-3 sm:py-5 sm:px-6 md:px-10 lg:px-14 xl:px-16">
           <h2 class=" text-xl font-Jersey mb-4 text-center text-[#447EBE] sm:text-2xl lg:text-3xl 2xl:text-4xl">Testimoni Jamaah</h2>
       
-          <div class="w-11/12 mx-auto flex gap-4 overflow-x-auto md:grid md:grid-cols-2 md:overflow-visible md:px-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+          <div class="w-full mx-auto flex gap-4 overflow-x-auto md:grid md:grid-cols-2 md:overflow-visible md:px-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
             <div class="bg-[#447EBE] text-white p-2 rounded-xl text-center min-w-40 md:w-full shadow-lg">
               <img src="../assets/profile1.png" alt="Profile 1" class="w-16 h-16 mx-auto rounded-full bg-white border-4 border-white object-cover" />
               <h3 class="mt-0.5 font-semibold text-lg">Jamaah 1</h3>
@@ -282,10 +280,10 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-[url('../../assets/txtr5.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply text-white py-3 sm:py-5">
+    <footer class="bg-[url('../../assets/txtr5.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply text-white py-3 sm:py-5 w-screen  mx-auto max-w-screen-xl">
       <div class="container px-4 grid grid-cols-1 gap-6 sm:px-6 sm:grid-cols-3 sm:gap-8 md:grid-cols-3 lg:grid-cols-3 lg:px-8">
         <!-- Lokasi dan Maps -->
-        <div class="items-center">
+        <div class="items-center mx-auto">
           <h2 class="font-bold text-base mb-1 lg:text-xl">Lokasi Kantor</h2>
           <p class="text-xs lg:text-sm">
             Jl. Simo Pomahan Baru No. 70A
@@ -306,7 +304,7 @@
         </div>
 
         <!-- Info Perusahaan -->
-        <div class="hidden sm:block text-xs lg:text-sm">
+        <div class="hidden sm:block text-xs lg:text-sm mx-auto">
           <h2 class="font-bold text-base mb-2 lg:text-xl">PT. Zamzam Berkah Utama</h2>
           <p class="mb-2 text-justify">Agen travel ibadah Haji dan Umrah dengan pengalaman lebih dari 10 tahun melayani jamaah dengan amanah dan berkualitas.</p>
           <p class="mb-2">Memiliki legalitas resmi yang terdaftar:</p>
@@ -317,19 +315,19 @@
         </div>
 
         <!-- Kontak & Sosial Media -->
-        <div class="">
+        <div class="mx-auto">
           <h2 class="font-bold text-md mb-1 lg:text-xl">Kontak Kami</h2>
           <p class="text-xs lg:text-sm">
             WhatsApp: 0821-4355-1888
             <br />
             <!-- Email: info@zamzamtour.com -->
           </p>
-          <div class="flex space-x-2 mt-4 ">
-            <a href="https://wa.me/6282143551888" aria-label="WhatsApp"><img src="../assets/Icon/inverted_whatsapp.png" alt="WhatsApp" class="w-6 h-6 lg:w-8 lg:h-8" /></a>
-            <a href="https://www.instagram.com/zbutravel/" aria-label="Instagram"><img src="../assets/Icon/inverted_instagram.png" alt="Instagram" class="w-6 h-6 lg:w-8 lg:h-8" /></a>
-            <a href="https://web.facebook.com/profile.php?id=100010957997098" aria-label="Facebook"><img src="../assets/Icon/inverted_facebook.png" alt="Facebook" class="w-6 h-6 lg:w-8 lg:h-8" /></a>
-            <a href="https://www.tiktok.com/@zbutravel" aria-label="Tiktok"><img src="../assets/Icon/inverted_tiktok.png" alt="Tiktok" class="w-6 h-6 lg:w-8 lg:h-8" /></a>
-            <a href="https://www.youtube.com/@zamzamberkahutama3336" aria-label="YouTube"><img src="../assets/Icon/inverted_youtube.png" alt="YouTube" class="w-6 h-6 lg:w-8 lg:h-8" /></a>
+          <div class="flex space-x-2 mt-4">
+            <a href="https://wa.me/6282143551888" aria-label="WhatsApp"><img src="../../assets/Icon/inverted_whatsapp.png" alt="WhatsApp" class="w-6 h-6 lg:w-8 lg:h-8" /></a>
+            <a href="https://www.instagram.com/zbutravel/" aria-label="Instagram"><img src="../../assets/Icon/inverted_instagram.png" alt="Instagram" class="w-6 h-6 lg:w-8 lg:h-8" /></a>
+            <a href="https://web.facebook.com/profile.php?id=100010957997098" aria-label="Facebook"><img src="../../assets/Icon/inverted_facebook.png" alt="Facebook" class="w-6 h-6 lg:w-8 lg:h-8" /></a>
+            <a href="https://www.tiktok.com/@zbutravel" aria-label="Tiktok"><img src="../../assets/Icon/inverted_tiktok.png" alt="Tiktok" class="w-6 h-6 lg:w-8 lg:h-8" /></a>
+            <a href="https://www.youtube.com/@zamzamberkahutama3336" aria-label="YouTube"><img src="../../assets/Icon/inverted_youtube.png" alt="YouTube" class="w-6 h-6 lg:w-8 lg:h-8" /></a>
           </div>
         </div>
       </div>

@@ -11,9 +11,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body class="min-h-screen flex flex-col overflow-x-hidden">
-    <header class="bg-[#447EBE]">
+    <header class="bg-[#447EBE] w-screen mx-auto max-w-screen-xl">
       <!-- Navbar -->
-      <nav class="shadow-md py-4 px-4 text-white font-Jersey tracking-wider sm:px-6 md:px-8">
+      <nav class="shadow-md py-4 px-4 mx-auto text-white font-Jersey tracking-wider sm:px-6 md:px-10 lg:px-14 xl:px-16">
         <div class="flex items-center justify-between">
           <!-- Logo -->
           <a href="../index.html"><img src="../../assets/logo.png" alt="Logo" class="w-40 sm:w-44 lg:w-56" /></a>
@@ -25,13 +25,13 @@
             </svg>
           </button>
 
-          <div class="hidden space-x-4 text-lg font-Jersey tracking-wider items-center lg:flex">
+          <div class="hidden space-x-4 text-xl font-Jersey tracking-wider items-center lg:flex">
             <a href="paket.html" class="block px-2 py-2 hover:bg-[#366ba1] rounded">Paket ZBU</a>
             <a href="galeri.html" class="block px-2 py-2 hover:bg-[#366ba1] rounded">Galeri</a>
             <a href="tentang-kami.html" class="block px-2 py-2 hover:bg-[#366ba1] rounded">Tentang Kami</a>
           </div>
         </div>
-        
+
         <!-- Menu List -->
         <div id="menu" class="mt-4 space-y-2 hidden">
           <a href="paket.html" class="block px-2 py-2 hover:bg-[#366ba1] rounded">Paket ZBU</a>
@@ -52,16 +52,14 @@
               <a href="#" class="block px-4 py-2 hover:bg-[#5d95d2]">Wisata Halal</a>
             </div>
           </div> -->
-
         </div>
-        
       </nav>
     </header>
 
-    <main class="flex-1 overflow-x-hidden">
-      <section class="h-max py-4 bg-cover bg-center bg-[url('../../assets/txtr5.jpg')] bg-white bg-blend-multiply">
-        <h2 class="text-xl text-[#447EBE] font-Jersey mb-3 text-center sm:text-2xl lg:text-3xl 2xl:text-4xl">Kegiatan Jamaah ZBU</h2>
-        <div class="grid grid-cols-2 grid-rows-5 gap-2 px-5 sm:w-11/12 sm:mx-auto sm:px-0 md:px-3 lg:grid-cols-3 lg:grid-rows-8 lg:gap-3">
+    <main class="flex-1 overflow-x-hidden w-screen mx-auto max-w-screen-xl">
+      <section class="h-max py-8 bg-cover bg-center bg-[url('../../assets/txtr5.jpg')] bg-white bg-blend-multiply  sm:px-6 md:px-10 lg:px-14 xl:px-16">
+        <h2 class="text-xl text-[#447EBE] font-Jersey mb-3 text-center sm:text-2xl lg:text-3xl xl:text-4xl">Kegiatan Jamaah ZBU</h2>
+        <div class="grid grid-cols-2 grid-rows-5 gap-2 px-5 sm:w-full sm:mx-auto sm:px-0 lg:grid-cols-3 lg:grid-rows-8 lg:gap-3">
           <div class="rounded-xl row-span-3 bg-white" data-aos="zoom-in" data-aos-duration="800">
             <img src="../../assets/6.jpg" alt="Gambar 1" class="border border-white w-full h-full rounded-xl object-cover" />
           </div>
@@ -89,10 +87,10 @@
 
   
     <!-- Footer -->
-    <footer class="bg-[url('../../assets/txtr5.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply text-white py-3 sm:py-5">
+    <footer class="bg-[url('../../assets/txtr5.jpg')] bg-cover bg-center bg-[#447EBE] bg-blend-multiply text-white py-3 sm:py-5 w-screen mx-auto max-w-screen-xl">
       <div class="container px-4 grid grid-cols-1 gap-6 sm:px-6 sm:grid-cols-3 sm:gap-8 md:grid-cols-3 lg:grid-cols-3 lg:px-8">
         <!-- Lokasi dan Maps -->
-        <div class="items-center">
+        <div class="items-center mx-auto">
           <h2 class="font-bold text-base mb-1 lg:text-xl">Lokasi Kantor</h2>
           <p class="text-xs lg:text-sm">
             Jl. Simo Pomahan Baru No. 70A
@@ -113,7 +111,7 @@
         </div>
 
         <!-- Info Perusahaan -->
-        <div class="hidden sm:block text-xs lg:text-sm">
+        <div class="hidden sm:block text-xs lg:text-sm mx-auto">
           <h2 class="font-bold text-base mb-2 lg:text-xl">PT. Zamzam Berkah Utama</h2>
           <p class="mb-2 text-justify">Agen travel ibadah Haji dan Umrah dengan pengalaman lebih dari 10 tahun melayani jamaah dengan amanah dan berkualitas.</p>
           <p class="mb-2">Memiliki legalitas resmi yang terdaftar:</p>
@@ -124,14 +122,14 @@
         </div>
 
         <!-- Kontak & Sosial Media -->
-        <div class="">
+        <div class="mx-auto">
           <h2 class="font-bold text-md mb-1 lg:text-xl">Kontak Kami</h2>
           <p class="text-xs lg:text-sm">
             WhatsApp: 0821-4355-1888
             <br />
             <!-- Email: info@zamzamtour.com -->
           </p>
-          <div class="flex space-x-2 mt-4 ">
+          <div class="flex space-x-2 mt-4">
             <a href="https://wa.me/6282143551888" aria-label="WhatsApp"><img src="../../assets/Icon/inverted_whatsapp.png" alt="WhatsApp" class="w-6 h-6 lg:w-8 lg:h-8" /></a>
             <a href="https://www.instagram.com/zbutravel/" aria-label="Instagram"><img src="../../assets/Icon/inverted_instagram.png" alt="Instagram" class="w-6 h-6 lg:w-8 lg:h-8" /></a>
             <a href="https://web.facebook.com/profile.php?id=100010957997098" aria-label="Facebook"><img src="../../assets/Icon/inverted_facebook.png" alt="Facebook" class="w-6 h-6 lg:w-8 lg:h-8" /></a>

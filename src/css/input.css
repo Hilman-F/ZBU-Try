@@ -4,6 +4,7 @@
 
 @theme {
   --font-Jersey: "Jersey 25", "sans-serif";
+  --breakpoint-3xl: 2048px;
 }
 
 @layer utilities {

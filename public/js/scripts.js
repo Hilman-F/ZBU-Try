@@ -71,9 +71,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function setActiveTab(activeBtn) {
     tabButtons.forEach((btn) => {
-      btn.classList.remove("text-white", "bg-[#447EBE]", "font-bold");
+      btn.classList.remove("text-white", "bg-[#002557]", "font-bold");
     });
-    activeBtn.classList.add("text-white", "bg-[#447EBE]", "font-bold");
+    activeBtn.classList.add("text-white", "bg-[#002557]", "font-bold");
   }
 
   function renderPromos(category) {

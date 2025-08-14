@@ -3,24 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>              
     <title>Document</title>
 </head>
 <body>
-    <div class="relative w-96">
-        <svg viewBox="0 0 300 200" class="w-full h-auto">
-          <defs>
-            <clipPath id="trapClip">
-              <polygon points="50,0 250,0 300,100 0,100" />
-            </clipPath>
-          </defs>
-      
-          <image href="https://picsum.photos/300/200" width="300" height="200" clip-path="url(#trapClip)" />
-        </svg>
-      
-        <div class="absolute inset-0 flex items-center justify-center">
-          <h1 class="text-white text-2xl font-bold drop-shadow-lg">Teks di Atas</h1>
-        </div>
-      </div>
+    
+
+
+<div class="flex">
+  <svg class="w-1/4" viewBox="0 0 1124 1124" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <!-- ClipPath untuk gambar -->
+      <clipPath id="innerShape">
+        <!-- Path di-scaling sedikit supaya ada jarak -->
+        <path transform="scale(0.96) translate(22,22)" 
+          d="M1029.09 0C1041.99 45.6982 1078.16 81.6307 1124 94.1816V1026.82C1077.16 1039.64 1040.41 1076.88 1028.28 1124H98.7158C86.3298 1075.88 48.2652 1038.06 0 1026.03V94.9658C47.2574 83.1866 84.7347 46.6906 97.9053 0H1029.09Z" 
+        />
+      </clipPath>
+    </defs>
+  
+    <!-- Path untuk stroke (ukuran asli) -->
+    <path 
+      d="M1029.09 0C1041.99 45.6982 1078.16 81.6307 1124 94.1816V1026.82C1077.16 1039.64 1040.41 1076.88 1028.28 1124H98.7158C86.3298 1075.88 48.2652 1038.06 0 1026.03V94.9658C47.2574 83.1866 84.7347 46.6906 97.9053 0H1029.09Z" 
+      fill="none" 
+      stroke="black" 
+      stroke-width="10"
+    />
+  
+    <!-- Gambar di dalam bentuk yang lebih kecil -->
+    <image 
+      href="https://picsum.photos/id/1015/1124/1124" 
+      width="1124" 
+      height="1124" 
+      clip-path="url(#innerShape)" 
+      preserveAspectRatio="xMidYMid slice"
+    />
+  </svg>
+
+  <svg class="w-2/4" viewBox="0 0 2248 1124" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <!-- ClipPath untuk gambar -->
+      <clipPath id="innerShape2">
+        <!-- Path di-scaling dari tengah -->
+        <path 
+          transform="translate(1124,562) scale(0.98, 0.96) translate(-1124,-562)" 
+          d="M2153.09 0C2165.99 45.6982 2202.16 81.6307 2248 94.1816V1026.82C2201.16 1039.64 2164.41 1076.88 2152.28 1124H98.7158C86.3298 1075.88 48.2652 1038.06 0 1026.03V94.9658C47.2574 83.1866 84.7347 46.6906 97.9053 0H2153.09Z"
+        />
+      </clipPath>
+    </defs>
+  
+    <!-- Path untuk stroke (ukuran asli) -->
+    <path 
+      d="M2153.09 0C2165.99 45.6982 2202.16 81.6307 2248 94.1816V1026.82C2201.16 1039.64 2164.41 1076.88 2152.28 1124H98.7158C86.3298 1075.88 48.2652 1038.06 0 1026.03V94.9658C47.2574 83.1866 84.7347 46.6906 97.9053 0H2153.09Z" 
+      fill="none" 
+      stroke="black" 
+      stroke-width="10"
+    />
+  
+    <!-- Gambar di dalam bentuk yang lebih kecil -->
+    <image 
+      href="https://picsum.photos/id/1015/2248/1124" 
+      width="2248" 
+      height="1124" 
+      clip-path="url(#innerShape2)" 
+      preserveAspectRatio="xMidYMid slice"
+    />
+  </svg>
+  </div>
       
 </body>
 </html>

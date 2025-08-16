@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Popup Iklan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* Animasi pop in */
+    @keyframes popIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* Animasi pop out */
+    @keyframes popOut {
+      0% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(0.5); opacity: 0; }
+    }
+
+    .animate-popIn {
+      animation: popIn 0.3s ease-out forwards;
+    }
+
+    .animate-popOut {
+      animation: popOut 0.3s ease-in forwards;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Popup -->
+  <div id="popup-ads" class="fixed inset-0 backdrop-blur-sm flex items-center justify-center hidden">
+    <div id="popup-content" class=" rounded-xl max-w-md  relative p-6">
+      <!-- Tombol Close -->
+      <a id="close-popup" class="absolute cursor-pointer top-1 right-1 text-gray-500 hover:text-red-500 text-xl rounded-full">
+        <i class="fa-regular fa-circle-xmark"></i>
+    </a>
+      
+      <!-- Konten Iklan -->
+       <img class="border-2 border-[#002557]" src="assets/profileSatriya.png" alt="">
+      
+      <!-- Konten Iklan -->
+      <!-- <h2 class="text-2xl font-bold mb-4">🎉 Promo Spesial!</h2>
+      <p class="mb-4 text-gray-700">Dapatkan diskon 50% untuk pembelian pertama Anda. Jangan lewatkan!</p>
+      <a href="#" class="block text-center bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-lg">Beli Sekarang</a> -->
+    </div>
+  </div>
+
+  <!-- Konten Halaman -->
+  <div class="p-8 text-center">
+    <h1 class="text-3xl font-bold mb-4">Halaman Utama</h1>
+    <p>Selamat datang di website kami!</p>
+  </div>
+
+  <script>
+    const popup = document.getElementById('popup-ads');
+    const popupContent = document.getElementById('popup-content');
+    const closeBtn = document.getElementById('close-popup');
+
+    // Tampilkan popup saat halaman pertama dibuka
+    window.addEventListener('load', () => {
+      popup.classList.remove('hidden');
+      popupContent.classList.remove('animate-popOut');
+      popupContent.classList.add('animate-popIn');
+    });
+
+    // Tutup popup dengan animasi
+    closeBtn.addEventListener('click', () => {
+      popupContent.classList.remove('animate-popIn');
+      popupContent.classList.add('animate-popOut');
+
+      // Tunggu animasi selesai sebelum menyembunyikan overlay
+      setTimeout(() => {
+        popup.classList.add('hidden');
+      }, 300); // durasi 0.3s sama seperti animasi
+    });
+  </script>
+</body>
+</html>

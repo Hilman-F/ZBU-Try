@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>              
+    <script src="https://cdn.tailwindcss.com"></script>      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">        
     <title>Document</title>
 </head>
 <body>
@@ -11,65 +12,165 @@
 
 
 <div class="flex">
-  <svg class="w-1/4" viewBox="0 0 1124 1124" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <!-- ClipPath untuk gambar -->
-      <clipPath id="innerShape">
-        <!-- Path di-scaling sedikit supaya ada jarak -->
-        <path transform="scale(0.96) translate(22,22)" 
-          d="M1029.09 0C1041.99 45.6982 1078.16 81.6307 1124 94.1816V1026.82C1077.16 1039.64 1040.41 1076.88 1028.28 1124H98.7158C86.3298 1075.88 48.2652 1038.06 0 1026.03V94.9658C47.2574 83.1866 84.7347 46.6906 97.9053 0H1029.09Z" 
-        />
-      </clipPath>
-    </defs>
   
-    <!-- Path untuk stroke (ukuran asli) -->
-    <path 
-      d="M1029.09 0C1041.99 45.6982 1078.16 81.6307 1124 94.1816V1026.82C1077.16 1039.64 1040.41 1076.88 1028.28 1124H98.7158C86.3298 1075.88 48.2652 1038.06 0 1026.03V94.9658C47.2574 83.1866 84.7347 46.6906 97.9053 0H1029.09Z" 
+  <div class="relative">
+    <svg class="h-[20rem] w-auto" viewBox="0 0 1124 1124" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <!-- ClipPath untuk gambar -->
+        <clipPath id="innerShape">
+          <!-- Path di-scaling sedikit supaya ada jarak -->
+          <path transform="scale(0.96) translate(22,22)" 
+            d="M1029.09 0C1041.99 45.6982 1078.16 81.6307 1124 94.1816V1026.82C1077.16 1039.64 1040.41 1076.88 1028.28 1124H98.7158C86.3298 1075.88 48.2652 1038.06 0 1026.03V94.9658C47.2574 83.1866 84.7347 46.6906 97.9053 0H1029.09Z" 
+          />
+        </clipPath>
+      </defs>
+    
+      <!-- Path untuk stroke (ukuran asli) -->
+      <path 
+        d="M1029.09 0C1041.99 45.6982 1078.16 81.6307 1124 94.1816V1026.82C1077.16 1039.64 1040.41 1076.88 1028.28 1124H98.7158C86.3298 1075.88 48.2652 1038.06 0 1026.03V94.9658C47.2574 83.1866 84.7347 46.6906 97.9053 0H1029.09Z" 
+        fill="none" 
+        stroke="black" 
+        stroke-width="10"
+      />
+    
+      <!-- Gambar di dalam bentuk yang lebih kecil -->
+      <image 
+        href="assets/paket/16. PROGRAM I'TIKAF.png" 
+        width="1124" 
+        height="1124" 
+        clip-path="url(#innerShape)" 
+        preserveAspectRatio="xMidYMid slice"
+      />
+    </svg>
+  </div>
+  
+  <div class="relative">
+    <svg class="h-[20rem] w-auto" viewBox="0 0 3372 1124" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <!-- ClipPath untuk gambar -->
+        <clipPath id="innerShape2">
+          <!-- Path di-scaling dari tengah -->
+          <path 
+          transform="translate(1686,562) scale(0.99, 0.97) translate(-1686,-562)" 
+          d="M3281.09 0C3293.61 44.3606 3328.06 79.5185 3372 93.0195V1027.98C3327.08 1041.78 3292.07 1078.23 3280.28 1124H98.7158C86.3298 1075.88 48.2652 1038.06 0 1026.03V94.9658C47.2574 83.1866 84.7347 46.6906 97.9053 0H3281.09Z"
+          />
+        </clipPath>
+      </defs>
+      
+      <!-- Path untuk stroke (ukuran asli) -->
+      <path 
+      d="M3281.09 0C3293.61 44.3606 3328.06 79.5185 3372 93.0195V1027.98C3327.08 1041.78 3292.07 1078.23 3280.28 1124H98.7158C86.3298 1075.88 48.2652 1038.06 0 1026.03V94.9658C47.2574 83.1866 84.7347 46.6906 97.9053 0H3281.09Z"
       fill="none" 
       stroke="black" 
       stroke-width="10"
-    />
-  
-    <!-- Gambar di dalam bentuk yang lebih kecil -->
-    <image 
-      href="https://picsum.photos/id/1015/1124/1124" 
-      width="1124" 
-      height="1124" 
-      clip-path="url(#innerShape)" 
-      preserveAspectRatio="xMidYMid slice"
-    />
-  </svg>
-
-  <svg class="w-2/4" viewBox="0 0 2248 1124" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <!-- ClipPath untuk gambar -->
-      <clipPath id="innerShape2">
-        <!-- Path di-scaling dari tengah -->
-        <path 
-          transform="translate(1124,562) scale(0.98, 0.96) translate(-1124,-562)" 
-          d="M2153.09 0C2165.99 45.6982 2202.16 81.6307 2248 94.1816V1026.82C2201.16 1039.64 2164.41 1076.88 2152.28 1124H98.7158C86.3298 1075.88 48.2652 1038.06 0 1026.03V94.9658C47.2574 83.1866 84.7347 46.6906 97.9053 0H2153.09Z"
-        />
-      </clipPath>
-    </defs>
-  
-    <!-- Path untuk stroke (ukuran asli) -->
-    <path 
-      d="M2153.09 0C2165.99 45.6982 2202.16 81.6307 2248 94.1816V1026.82C2201.16 1039.64 2164.41 1076.88 2152.28 1124H98.7158C86.3298 1075.88 48.2652 1038.06 0 1026.03V94.9658C47.2574 83.1866 84.7347 46.6906 97.9053 0H2153.09Z" 
-      fill="none" 
-      stroke="black" 
-      stroke-width="10"
-    />
-  
-    <!-- Gambar di dalam bentuk yang lebih kecil -->
-    <image 
-      href="https://picsum.photos/id/1015/2248/1124" 
-      width="2248" 
-      height="1124" 
+      />
+      
+      <!-- Gambar di dalam bentuk yang lebih kecil -->
+      <image class="border-amber-200 border-4"
+      href="assets/paket/2248x1124-01.jpg" 
+      width="100%" 
+      
       clip-path="url(#innerShape2)" 
       preserveAspectRatio="xMidYMid slice"
-    />
-  </svg>
+      />
+    </svg>
+
+    <div class="h-[19.5rem] absolute top-1 left-1 p-4 flex flex-col justify-center">
+      <h1 class="text-white -mb-1 font-bold text-3xl text-center">UMROH BULAN DESEMBER</h1>
+      <h1 class="text-white -mb-1 font-bold text-2xl text-center">12 Hari, 10 Malam</h1>
+      <h1 class="text-white font-semibold text-xl text-center">24 Desember 2025</h1>
+
+      <div class="w-full rounded-2xl p-3 mt-6 border-2 border-white h-max">
+        <ul class=" text-white grid grid-cols-2 gap-x-2">
+          <li class="flex items-center">
+            <i class="fa-solid fa-circle-check text-white mr-2"></i>
+            <span class="normal-case">Maskapai Lion Air</span>
+          </li>
+          <li class="flex items-center">
+            <i class="fa-solid fa-circle-check text-white mr-2"></i>
+            <span class="normal-case">Asuransi</span>
+          </li>
+          <li class="flex items-center">
+            <i class="fa-solid fa-circle-check text-white mr-2"></i>
+            <span class="normal-case">Hotel Bintang 3</span>
+          </li>
+          <li class="flex items-center">
+            <i class="fa-solid fa-circle-check text-white mr-2"></i>
+            <span class="normal-case">Siskopatuh</span>
+          </li>
+          <li class="flex items-center">
+            <i class="fa-solid fa-circle-check text-white mr-2"></i>
+            <span class="normal-case">E-Visa Umroh</span>
+          </li>
+          <li class="flex items-center">
+            <i class="fa-solid fa-circle-check text-white mr-2"></i>
+            <span class="normal-case">Perlengkapan Ibadah</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col items-center mt-6">
+        <button class=" py-1 bg-white rounded-full px-16 items-center">
+          Tombol
+        </button>
+      </div>
+    </div>
+
+    <div class="h-[19.5rem] absolute top-1 left-[45%] py-4 px-6 flex flex-col justify-center">
+      <div class="bg-white w-full rounded-2xl p-6 h-full">
+        <h1 class="text-2xl font-bold">Fasilitas Lainnya: </h1>
+        
+        <div class="w-full rounded-2xl py-3 mt-4  h-max">
+          <ul class="space-y-4 text-black grid grid-cols-[55%_45%] gap-x-2">
+            <li class="flex items-center">
+              <i class="fa-solid fa-plane text-black mr-2"></i>
+              <span class="normal-case text-sm">Tiket Pesawat PP dari Surabaya</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fa-solid fa-bottle-water text-black mr-2"></i>
+              <span class="normal-case text-sm">Air Zamzam 5 Liter</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fa-solid fa-bus-simple text-black mr-2"></i>
+              <span class="normal-case text-sm">Transportasi Bus AC Eksekutif</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fa-solid fa-images text-black mr-2"></i>
+              <span class="normal-case text-sm">Souvenir Pigura Eksklusif</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fa-solid fa-utensils text-black mr-2"></i>
+              <span class="normal-case text-sm">Makan 3x Sehari Menu Indonesia</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fa-solid fa-kaaba text-black mr-2"></i>
+              <span class="normal-case text-sm">Manasik umroh</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fa-solid fa-people-group text-black mr-2"></i>
+              <span class="normal-case text-sm">Pembimbing & Tour Leader Berpengalaman</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="absolute top-1 right-1">
+      <div class="relative">
+        <svg class="rotate-12" width="150" viewBox="0 0 1301 910" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M708.452 0.0625C749.006 92.0607 841.002 156.282 947.999 156.282C992.993 156.282 1035.33 144.925 1072.31 124.922C1071.08 135.204 1070.45 145.669 1070.45 156.282C1070.45 290.266 1171.15 400.728 1301 416.112C1191.02 447.08 1110.41 548.128 1110.41 668.006C1110.41 690.187 1113.17 711.724 1118.37 732.291C1095.37 725.684 1071.08 722.143 1045.96 722.143C927.441 722.143 827.325 800.942 795.146 909.008C794.109 909.167 793.071 909.325 792.032 909.48C744.195 847.292 669.032 807.215 584.508 807.215C513.05 807.215 448.282 835.86 401.061 882.293C378.768 760.397 272.013 668.006 143.678 668.006C115.815 668.006 88.9685 672.361 63.7832 680.428C97.7197 636.297 117.898 581.037 117.898 521.062C117.898 429.731 71.1054 349.329 0.186523 302.521C19.7572 307.195 40.1815 309.67 61.1836 309.67C205.695 309.67 322.846 192.52 322.846 48.0078C322.846 46.7907 322.836 45.5755 322.819 44.3623C324.386 43.8174 325.957 43.2773 327.53 42.7402C373.341 82.1735 432.96 106.012 498.146 106.012C584.328 106.012 660.777 64.347 708.452 0.0625Z" fill="#FF0000"/>
+          <g transform="rotate(12, 650, 455)" font-family="sans-serif" fill="white" font-weight="bold" text-anchor="middle" dominant-baseline="middle">
+            <text x="370"  y="220" font-size="120">Rp.</text>
+            <text x="600"  y="470" font-size="350">33.5</text>
+            <text x="1030" y="470" font-size="120">Jt</text>
+            <text x="650"  y="670" font-size="120">/PAX Quad</text>
+          </g>
+        </svg>        
+      </div>
+    </div>
   </div>
-      
+  </div>
+  
 </body>
 </html>

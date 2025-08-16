@@ -9,8 +9,40 @@
     <link rel="stylesheet" href="public/css/style.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    /* Animasi pop in */
+    @keyframes popIn {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* Animasi pop out */
+    @keyframes popOut {
+      0% { transform: scale(1); opacity: 1; }
+      100% { transform: scale(0.5); opacity: 0; }
+    }
+
+    .animate-popIn {
+      animation: popIn 0.3s ease-out forwards;
+    }
+
+    .animate-popOut {
+      animation: popOut 0.3s ease-in forwards;
+    }
+  </style>
   </head>
   <body class="min-h-screen flex flex-col overflow-x-hidden">
+    <div id="popup-ads" class="fixed inset-0 backdrop-blur-sm flex items-center justify-center hidden z-10">
+      <div id="popup-content" class="rounded-xl max-w-md  relative p-6">
+        <a id="close-popup" class="absolute cursor-pointer top-1 right-1 text-black hover:text-red-500 text-xl rounded-full">
+            <i class="fa-regular fa-circle-xmark"></i>
+        </a>
+        <img class="rounded-lg " src="assets/poster.jpg" alt="poster">
+      </div>
+    </div>
+
     <header class="bg-[#002557] w-screen mx-auto max-w-screen-xl">
       <!-- Navbar -->
       <nav class="shadow-md py-4 px-4 mx-auto text-white font-Jersey tracking-wider sm:px-6 md:px-10 lg:px-14 xl:px-16">
@@ -56,11 +88,17 @@
       </nav>
     </header>
 
-    <main class="flex-1 overflow-x-hidden w-screen mx-auto max-w-screen-xl">
+    <main class="flex-1 overflow-x-hidden w-screen mx-auto max-w-screen-xl z-0">
       <!-- Hero [#2c2985] -->
       <section class="bg-[#002557]" >
         <div class="relative mySwiper w-full h-[13rem] sm:h-[20rem] md:h-[25rem] lg:h-[30rem] xl:h-[35rem]">
           <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../assets/Slider/7.png" alt="7" class="w-full h-full border-8 border-[#002557] rounded-3xl object-cover object-center" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/Slider/9.png" alt="9" class="w-full h-full border-8 border-[#002557] rounded-3xl object-cover object-center" />
+            </div>
             <div class="swiper-slide">
               <img src="../assets/Slider/1.png" alt="1" class="w-full h-full border-8 border-[#002557] rounded-3xl object-cover object-center" />
             </div>
@@ -69,6 +107,9 @@
             </div>
             <div class="swiper-slide">
               <img src="../assets/Slider/4.png" alt="4" class="w-full h-full border-8 border-[#002557] rounded-3xl object-cover object-center" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../assets/Slider/8.png" alt="8" class="w-full h-full border-8 border-[#002557] rounded-3xl object-cover object-center" />
             </div>
             <div class="swiper-slide">
               <img src="../assets/Slider/5.png" alt="5" class="w-full h-full border-8 border-[#002557] rounded-3xl object-cover object-center" />
@@ -421,6 +462,30 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="public/js/scripts.js"></script>
+
+    <script>
+      const popup = document.getElementById('popup-ads');
+      const popupContent = document.getElementById('popup-content');
+      const closeBtn = document.getElementById('close-popup');
+  
+      // Tampilkan popup saat halaman pertama dibuka
+      window.addEventListener('load', () => {
+        popup.classList.remove('hidden');
+        popupContent.classList.remove('animate-popOut');
+        popupContent.classList.add('animate-popIn');
+      });
+  
+      // Tutup popup dengan animasi
+      closeBtn.addEventListener('click', () => {
+        popupContent.classList.remove('animate-popIn');
+        popupContent.classList.add('animate-popOut');
+  
+        // Tunggu animasi selesai sebelum menyembunyikan overlay
+        setTimeout(() => {
+          popup.classList.add('hidden');
+        }, 300); // durasi 0.3s sama seperti animasi
+      });
+    </script>
   </body>
 </html>
 

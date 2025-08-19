@@ -77,9 +77,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function setActiveTab(activeBtn) {
     tabButtons.forEach((btn) => {
-      btn.classList.remove("text-white", "bg-[#002557]", "font-bold");
+      btn.classList.remove("text-white", "bg-[#0A42B1]", "font-bold");
     });
-    activeBtn.classList.add("text-white", "bg-[#002557]", "font-bold");
+    activeBtn.classList.add("text-white", "bg-[#0A42B1]", "font-bold");
   }
 
   function renderPromos(category) {
@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
         daftarBtn.href = "https://wa.me/6282143551888";
         daftarBtn.textContent = "Daftar Sekarang";
         daftarBtn.className =
-          "absolute top-[86%] left-[42%] -translate-x-1/2 -translate-y-1/2 " +
+          "absolute top-[90%] left-[48%] -translate-x-1/2 -translate-y-1/2 " +
           "bg-white text-[#447EBE] text-[0.25rem] font-bold px-3 py-0.5 rounded-full shadow-lg sm:text-[0.5rem] md:text-xs lg:text-base 2xl:text-xl " +
           "hover:bg-[#447EBE] hover:text-white transition z-10";
 

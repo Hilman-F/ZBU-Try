@@ -123,8 +123,8 @@ document.addEventListener("DOMContentLoaded", function () {
         daftarBtn.textContent = "Daftar Sekarang";
         daftarBtn.className =
           "absolute top-[86%] left-[42%] -translate-x-1/2 -translate-y-1/2 " +
-          "bg-white text-[#447EBE] text-[0.25rem] font-bold px-3 py-0.5 rounded-full shadow-lg sm:text-[0.5rem] md:text-xs lg:text-base 2xl:text-xl " +
-          "hover:bg-[#447EBE] hover:text-white transition z-10";
+          "bg-white text-[#0A42B1] text-[0.25rem] font-bold px-3 py-0.5 rounded-full shadow-lg sm:text-[0.5rem] md:text-xs lg:text-base 2xl:text-xl " +
+          "hover:bg-[#0A42B1] hover:text-white transition z-10";
 
         // // Tombol Daftar Sekarang
         // const daftarBtn = document.createElement("a");
@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // daftarBtn.textContent = "Daftar";
         // daftarBtn.className =
         //   "absolute top-[86%] left-[35%] -translate-x-1/2 -translate-y-1/2 " +
-        //   "bg-white text-[#447EBE] text-[0.25rem] font-bold px-1 py-0.5 rounded-full shadow-lg sm:text-[0.5rem] md:text-xs lg:text-base lg:px-2 lg:py-1 2xl:text-xl " +
+        //   "bg-white text-[#0A42B1] text-[0.25rem] font-bold px-1 py-0.5 rounded-full shadow-lg sm:text-[0.5rem] md:text-xs lg:text-base lg:px-2 lg:py-1 2xl:text-xl " +
         //   "hover:bg-blue-100 transition z-10";
 
         // // Tombol Hubungi Kami
@@ -140,7 +140,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // hubungiBtn.href = "https://wa.me/6282143551888";
         // hubungiBtn.className =
         //   "absolute top-[86%] left-[45%] -translate-x-1/2 -translate-y-1/2 lg:left-[46%] " +
-        //   "bg-[#447EBE] text-white text-[0.25rem] font-bold px-1 py-0.5 rounded-full shadow-lg sm:text-[0.5rem] md:text-xs lg:text-base lg:px-2 lg:py-1 2xl:text-xl " +
+        //   "bg-[#0A42B1] text-white text-[0.25rem] font-bold px-1 py-0.5 rounded-full shadow-lg sm:text-[0.5rem] md:text-xs lg:text-base lg:px-2 lg:py-1 2xl:text-xl " +
         //   "hover:bg-blue-100 transition z-10 flex items-center space-x-1";
 
         // const spanText = document.createElement("span");
